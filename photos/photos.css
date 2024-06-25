@@ -1,0 +1,78 @@
+body,
+html {
+    inset: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.choices a {
+    text-decoration: none;
+    color: unset;
+    font-weight: bold;
+    transition: 0.5s ease;
+    width: 49%;
+}
+
+.choices a:first-child {
+    text-align: right;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.slides {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.middle {
+    position: absolute;
+    height: 100%;
+    width: 10px;
+}
+
+.slide {
+    width: 10%;
+    height: 80%;
+    background-color: brown;
+    transition: 0.5s ease;
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+.radios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
+
+.radio {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(128, 128, 128, 0.546);
+    cursor: pointer;
+    border-radius: 100%;
+    margin-inline: 5px;
+}
